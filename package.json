@@ -9,11 +9,11 @@
     "build": "tsc",
     "start": "tsnd --respawn --prefer-ts --pretty ./src/index.ts",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
-    "prettier:ts": "prettier --parser typescript --config .prettierrc --write \"src/**/*.{ts,tsx}\""
+    "lint": "tslint -c tslint.json src/**/*.{ts} --fix --format verbose",
+    "prettier:ts": "prettier --parser typescript --config .prettierrc --write \"src/**/*.{ts}\""
   },
   "lint-staged": {
-    "*.+(tsx|ts)": [
+    "*.{ts}": [
       "prettier:ts"
     ]
   },
