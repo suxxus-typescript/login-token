@@ -14,9 +14,6 @@
   },
   "lint-staged": {
     "*.+(tsx|ts)": [
-      "lint"
-    ],
-    "*.+(tsx|ts)": [
       "prettier:ts"
     ]
   },
@@ -35,11 +32,18 @@
     "tslint-plugin-prettier": "^2.3.0",
     "typescript": "^3.8.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/jwt-decode": "^2.2.1",
+    "@types/lodash": "^4.14.150",
+    "@types/url-parse": "^1.4.3",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "parse-url": "^5.0.1",
+    "url-parse": "^1.4.7"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   }
 }
-
